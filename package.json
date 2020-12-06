@@ -1,0 +1,15 @@
+{
+  "name": "twitch-go-live-tweet-bot",
+  "version": "1.0.0",
+  "description": "Twitter bot that posts a tweet with link to Twitch channel when a stream starts",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "kopijunkie",
+  "license": "ISC",
+  "dependencies": {
+    "twit": "^2.2.11",
+    "twitch-js": "^2.0.0-beta.33"
+  }
+}
