@@ -14,6 +14,9 @@ const connectToTwitch = () => {
       console.error("* Twitch auth error!");
     },
   });
+  // POSSIBLE QUERIES:
+  // streams?user_login=${twitchUsername}
+  // search/channels?query=${twitchUsername}
   twitchJs.api.get(`search/channels?query=${twitchUsername}`).then(
     (response) => {
       console.log(response);
