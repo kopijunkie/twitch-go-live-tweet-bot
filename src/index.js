@@ -21,7 +21,7 @@ const connectToTwitch = () => {
       if (streamData.isLive) {
         postTweet(streamData.title);
       } else {
-        console.log(`${twitchUsername} is offline right now...`);
+        console.log(`${twitchUsername} is offline...`);
       }
     },
     (error) => {
@@ -32,10 +32,11 @@ const connectToTwitch = () => {
 
 const postTweet = (streamTitle = "") => {
   const Twitter = new Twit(twitterConfig);
+  const twitchURL = `https://www.twitch.tv/${twitchConfig.username}`;
   Twitter.post(
     "statuses/update",
     {
-      status: `${streamTitle}...come hang out ${twitchConfig.channel_url}`,
+      status: `${streamTitle}...come hang out :)\n${twitchURL}`,
     },
     (err, data, response) => {
       console.log(data);
