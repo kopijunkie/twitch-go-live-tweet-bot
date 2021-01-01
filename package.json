@@ -9,6 +9,7 @@
   "author": "kopijunkie",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.1",
     "twit": "^2.2.11",
     "twitch-js": "^2.0.0-beta.33"
   }
