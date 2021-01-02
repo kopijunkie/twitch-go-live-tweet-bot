@@ -46,6 +46,7 @@ const getChannelInfo = (accessToken) => {
       const streamData = response.data[0];
       if (streamData.isLive) {
         postGoLiveTweet(streamData.title);
+        console.log("Tweet sent. Check your Twitter feed if you like.");
       } else {
         console.log(`${twitchUsername} is offline...`);
       }
