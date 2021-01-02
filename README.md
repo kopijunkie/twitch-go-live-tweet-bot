@@ -1,6 +1,6 @@
 # Twitch "Go Live" Twitter Bot
 
-A simple bot written in node.js that posts a tweet when a specific Twitch channel is live.
+A simple Twitter bot written in node.js that posts a tweet if a specific Twitch channel is live.
 
 ## Usage
 

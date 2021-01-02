@@ -1,7 +1,7 @@
 {
   "name": "twitch-go-live-tweet-bot",
   "version": "1.0.0",
-  "description": "Twitter bot that posts a tweet with link to Twitch channel when a stream starts",
+  "description": "Twitter bot that posts a tweet with link to Twitch channel if a stream is live",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js"
