@@ -63,7 +63,7 @@ const postGoLiveTweet = (streamTitle = "Gone live!") => {
   Twitter.post(
     "statuses/update",
     {
-      status: `${streamTitle} Come hang out :)\n${twitchURL}`,
+      status: `${streamTitle}\nCome hang out & chill...\n${twitchURL}`,
     },
     (err, data, response) => {
       console.log(data);
